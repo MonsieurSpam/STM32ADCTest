@@ -1,8 +1,0 @@
-main.c:53:7:getPedal	1
-main.c:77:5:main	1
-main.c:125:6:SystemClock_Config	3
-main.c:172:13:MX_ADC1_Init	4
-main.c:233:13:MX_USART2_UART_Init	2
-main.c:264:13:MX_DMA_Init	1
-main.c:282:13:MX_GPIO_Init	1
-main.c:308:6:Error_Handler	1

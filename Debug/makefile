@@ -60,8 +60,8 @@ all: main-build
 main-build: NewADCTest.elf secondary-outputs
 
 # Tool invocations
-NewADCTest.elf NewADCTest.map: $(OBJS) $(USER_OBJS) /Users/alexlu/STM32CubeIDE/workspace_1.10.1/NewADCTest/STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "NewADCTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/alexlu/STM32CubeIDE/workspace_1.10.1/NewADCTest/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NewADCTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+NewADCTest.elf NewADCTest.map: $(OBJS) $(USER_OBJS) C:\Users\alexp\OneDrive\Desktop\New\ folder\STM32ADCTest\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "NewADCTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\alexp\OneDrive\Desktop\New folder\STM32ADCTest\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NewADCTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
